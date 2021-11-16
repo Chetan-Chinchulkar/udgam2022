@@ -49,4 +49,9 @@ app.use('/auth', require('./routes/auth'))
 
 app.listen(PORT,console.log(`listening at ${PORT}`))
 
+<<<<<<< HEAD
 //retain_karega_kya_gandu
+=======
+
+//hello checking git pull
+>>>>>>> c438a6dabf0e9bebb049d91bdca22d70cd53b8cb
