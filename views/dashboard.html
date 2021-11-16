@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UDGAM DASHBOARD</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="./dashboard.css">
+    <link rel="stylesheet" href="./font/stylesheet.css">
+    <link rel="icon" href="Group 33786.png">
+
+    <!-- link for font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+
+<body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <div class="clouds"></div>
+    <div class="container">
+        <div class="heading">
+            <h1>HI VED!</h1>
+            <p>Welcome to your UDGAM dashboard. Your one stop portal for all event information.</p>
+        </div>
+        <div class="profile">
+            <div class="profile-img">
+                <img src="https://media-exp1.licdn.com/dms/image/D5603AQE3kR2o4Snhpg/profile-displayphoto-shrink_800_800/0/1630266773475?e=1641427200&v=beta&t=kyTd95R0ZLaW0i6I_Hy8MTw3aRKp4N3DRV915gHJPDs" alt="profile img">
+            </div>
+            <div class="profile-text">
+                <div class="profile-content">
+                    <p>NAME</p>
+                    <h5>VEDAPRAKASH RAJAN</h5>
+                </div>
+                <div class="profile-content">
+                    <p>UDGAM PASS ID</p>
+                    <h5>987456321 <i class="fal fa-clipboard"></i></h5>
+                </div>
+                <div class="profile-content">
+                    <p>USER ID</p>
+                    <h5>258741</h5>
+                </div>
+                <div class="profile-content">
+                    <p>EMAIL ID</p>
+                    <h5>ved.iitg.ac.in</h5>
+                </div>
+                <button type="button" class="edit-btn">EDIT DETAILS</button>
+                <button type="button" class="logout-btn">LOGOUT</button>
+            </div>
+        </div>
+        <div class="events">
+            <div class="events-heading">
+                <h1 onclick="various()">EVENTS SCHEDULED &nbsp;|</h1>
+                <p onclick="added()"> Added</p>
+            </div>
+            <div class="events-btn">
+                <button>ADD ALL EVENST TO CALENDER</button>
+                <button>EVENTS TODAY</button>
+            </div>
+        </div>
+
+        <div class="various-events" id="default-events">
+            <div class="single-event">
+                <div class="event-details">
+                    <p>EVENT 1 : BIG BEAN BURRITO <span style="font-size: 18px; font-weight: 400;"> • 6:30 AM</span></p>
+                    <p>October 30th, 2021</p>
+                </div>
+                <button>BUY PASS</button>
+            </div>
+            <div class="single-event">
+                <div class="event-details">
+                    <p>EVENT 1 : BIG BEAN  hibjon nkhjbnp BURRITO <span style="font-size: 18px; font-weight: 400;"> • 6:30 AM</span></p>
+                    <p>October 30th, 2021</p>
+                </div>
+                <button>BUY PASS</button>
+            </div>
+            <div class="single-event">
+                <div class="event-details">
+                    <p>EVENT 1 : BIG BEAN BURRITO <span style="font-size: 18px; font-weight: 400;"> • 6:30 AM</span></p>
+                    <p>October 30th, 2021</p>
+                </div>
+                <button>BUY PASS</button>
+            </div>
+            <div class="single-event">
+                <div class="event-details">
+                    <p>EVENT 1 : BIG BEAN BURRITO <span style="font-size: 18px; font-weight: 400;"> • 6:30 AM</span></p>
+                    <p>October 30th, 2021</p>
+                </div>
+                <button>BUY PASS</button>
+            </div>
+            <div class="single-event">
+                <div class="event-details">
+                    <p>EVENT 1 : BIG BEAN BURRITO <span style="font-size: 18px; font-weight: 400;"> • 6:30 AM</span></p>
+                    <p>October 30th, 2021</p>
+                </div>
+                <button>BUY PASS</button>
+            </div>
+            <div class="single-event">
+                <div class="event-details">
+                    <p>EVENT 1 : BIG BEAN BURRITO <span style="font-size: 18px; font-weight: 400;"> • 6:30 AM</span></p>
+                    <p>October 30th, 2021</p>
+                </div>
+                <button>BUY PASS</button>
+            </div>
+            <div class="single-event">
+                <div class="event-details">
+                    <p>EVENT 1 : BIG BEAN BURRITO <span style="font-size: 18px; font-weight: 400;"> • 6:30 AM</span></p>
+                    <p>October 30th, 2021</p>
+                </div>
+                <button>BUY PASS</button>
+            </div>
+            <div class="single-event">
+                <div class="event-details">
+                    <p>EVENT 1 : Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur distinctio numquam aperiam dolor obcaecati, molestiae atque consequatur corporis ad repellat quis laudantium adipisci officia voluptas? <span style="font-size: 18px; font-weight: 400;"> • 6:30 AM</span></p>
+                    <p>October 30th, 2021</p>
+                </div>
+                <button>BUY PASS</button>
+            </div>
+        </div>
+
+        <div class="various-events" id="added-events">
+            <div class="single-event">
+                <div class="event-details">
+                    <p>EVENT 2 : these are added events <span style="font-size: 18px; font-weight: 400;"> • 6:30 AM</span></p>
+                    <p>October 30th, 2021</p>
+                </div>
+                <button>SELL PASS</button>
+            </div>
+            <div class="single-event">
+                <div class="event-details">
+                    <p>EVENT 2 : these are added events <span style="font-size: 18px; font-weight: 400;"> • 6:30 AM</span></p>
+                    <p>October 30th, 2021</p>
+                </div>
+                <button>SELL PASS</button>
+            </div>
+            <div class="single-event">
+                <div class="event-details">
+                    <p>EVENT 2 : these are added events <span style="font-size: 18px; font-weight: 400;"> • 6:30 AM</span></p>
+                    <p>October 30th, 2021</p>
+                </div>
+                <button>SELL PASS</button>
+            </div>
+            <div class="single-event">
+                <div class="event-details">
+                    <p>EVENT 2 : these are added events <span style="font-size: 18px; font-weight: 400;"> • 6:30 AM</span></p>
+                    <p>October 30th, 2021</p>
+                </div>
+                <button>SELL PASS</button>
+            </div>
+            <div class="single-event">
+                <div class="event-details">
+                    <p>EVENT 2 : these are added events <span style="font-size: 18px; font-weight: 400;"> • 6:30 AM</span></p>
+                    <p>October 30th, 2021</p>
+                </div>
+                <button>SELL PASS</button>
+            </div>
+            <div class="single-event">
+                <div class="event-details">
+                    <p>EVENT 2 : these are added events <span style="font-size: 18px; font-weight: 400;"> • 6:30 AM</span></p>
+                    <p>October 30th, 2021</p>
+                </div>
+                <button>SELL PASS</button>
+            </div>
+            <div class="single-event">
+                <div class="event-details">
+                    <p>EVENT 2 : these are added events <span style="font-size: 18px; font-weight: 400;"> • 6:30 AM</span></p>
+                    <p>October 30th, 2021</p>
+                </div>
+                <button>SELL PASS</button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- footer -->
+    <section>
+        <hr color="white">
+
+        <div class="contactus container">
+                <div class="contactus-left">
+                    <span>UDGAM 2022 </span><br>
+                    <span>COSMOS OF ENDEAVOURS </span><br>
+                    <span>FAQ • Contact us</span><br>
+                    <span>udgam@iitg.ac.in </span><br>
+                </div>
+
+                <div class="contactus-right">
+                    <span>Don’t miss the magic</span>
+                    <span>Sign up to receive event updates and notifications.</span>
+                    <form action="/action_page.php">
+                        <input type="email" id="emailid" name="fname">
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+        </div>
+
+        <hr style="background-color: white; margin: 0;">
+        <footer>
+            <div class="container footer-wrapper">
+                <div class="footer-text">
+                    Copyright &copy; 2022 UDGAM Creatives, All rights reserved.
+                </div>
+                <div class="footer-icons">
+                    <a href="https://www.facebook.com/ecell.iitg/" target="_blank">
+                        <img class="facebook button" src="static files\facebook.svg">
+                    </a>
+                    <a href="https://twitter.com/ecelliitg" target="_blank">
+                        <img class="twitter button" src="static files\twitter.svg">
+                    </a>
+                    <a href="https://www.linkedin.com/company/ecell-iitg/" target="_blank">
+                        <img class="linkedin button" src="static files\linkedin.svg">
+                    </a>
+                    <a href="https://www.instagram.com/ecell_iitg/" target="_blank">
+                        <img class="discord button" src="static files\instagram.svg">
+                    </a>
+                    <a href="https://www.youtube.com/user/iitgedc" target="_blank">
+                        <img class="discord button" src="static files\youtube.svg">
+                    </a>
+                </div>
+                <div class="mobile-footer-icons">
+                    Socials
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="./dashboard.js"></script>
+</body>
+
+</html>

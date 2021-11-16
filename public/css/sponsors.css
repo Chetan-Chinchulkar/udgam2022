@@ -1,0 +1,363 @@
+/* ------------------------- background css ------------------------- */
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@-webkit-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@-moz-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@-ms-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+@-webkit-keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+@-moz-keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+@-ms-keyframes move-clouds-back {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+
+.stars,
+.twinkling,
+.clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: fixed;
+}
+
+.stars {
+  background: #000
+    url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top
+    center;
+  z-index: -10;
+}
+
+.twinkling {
+  background: transparent
+    url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat
+    top center;
+  z-index: -5;
+
+  -moz-animation: move-twink-back 200s linear infinite;
+  -ms-animation: move-twink-back 200s linear infinite;
+  -o-animation: move-twink-back 200s linear infinite;
+  -webkit-animation: move-twink-back 200s linear infinite;
+  animation: move-twink-back 200s linear infinite;
+}
+
+.clouds {
+  background: transparent
+    url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top
+    center;
+  z-index: -3;
+
+  -moz-animation: move-clouds-back 200s linear infinite;
+  -ms-animation: move-clouds-back 200s linear infinite;
+  -o-animation: move-clouds-back 200s linear infinite;
+  -webkit-animation: move-clouds-back 200s linear infinite;
+  animation: move-clouds-back 200s linear infinite;
+}
+/* ------------------------- end ------------------------- */
+/* For mobile phones: */
+@media only screen and (max-width: 600px) {
+    
+    .sponsor{
+        margin-top: 20px;
+    }
+
+    .sponsor-other{
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .sp-extra{
+        margin-top: 20px !important;
+    }
+    .be-sp{
+        font-size: 12px !important;
+    }
+    *{
+        font-size: 12px ;
+    }
+    .title{
+        font-size: 20px !important;
+    }
+    .title-sponsor{
+        display: flex;
+        justify-content: left !important;
+        padding-left: 13px !important;
+
+    }
+    .tit-extra{
+        margin-top: 40px !important;
+
+    }
+    .main-title{
+        font-size: 35px !important;
+    }
+    .sponsor-img{
+        width: 100%;
+        height: auto;
+      }
+  
+  }
+
+  .sponsor-img{
+    width: 80%;
+    height: auto;
+  }
+  
+
+  .main-title{
+    font-size: 72px;
+    color: #01AC86;
+
+  }
+  
+  .be-sp{
+      font-size: 24px;
+      color: #01AC86;
+  }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
+.container{
+    width: 80vw;
+    margin: auto;
+    padding: 0 0;
+    max-width: 100% !important;
+    /* padding-left: 10vw;
+    padding-right: 10vw; */
+ 
+}
+
+
+.bg-dark {
+    /* background-color: #2e2e2e; */
+    /* background-color: #333333; */
+    background-color: transparent !important;
+    transition: 0.5s ease;
+}
+
+.bg-dark.scrolled {
+    background: #333333 !important;
+}
+
+.nav-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftnav, .rightnav {
+    /* border: 2px solid white; */
+    display: flex;
+    flex-grow: 2;
+    justify-content: space-around;
+}
+
+.midnav {
+    border: 2px solid white;
+    padding: 20px 0px;
+    flex-grow: 1;
+    height: 100%;
+}
+
+.leftnav a, .rightnav a {
+    display: inline-block;
+    /* border: 2px solid red; */
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 18px;
+    text-decoration: none;
+    font-style: Texta;
+    font-weight: 500;
+    color: white;
+}
+
+*{
+    font-style: Texta;
+    font-weight: 600;
+    color: white;
+}
+
+.title{
+    
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 50px;
+
+    /* #01AC86 */
+
+    color: #01AC86;
+
+}
+
+.sponsor{
+    border: 2px solid white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    
+}
+
+.sp-extra{
+    margin-top: 20px;
+}
+
+
+.sponsor-other{
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+#button{
+    border: 1px solid #01AC86;
+    padding: 2.5px 5px 2.5px 5px;
+}
+
+
+sup {
+    /* line-height: 1000%; */
+    vertical-align: super;
+        /* Specified in % so that the sup/sup is the
+        right size relative to the surrounding text */
+    font-size: 40%;
+
+    /* Zero out the line-height so that it doesn't
+        interfere with the positioning that follows */
+    line-height: 0;
+
+    /* Where the magic happens: makes all browsers position
+        the sup/sup properly, relative to the surrounding text */
+    position: relative;
+
+    /* Note that if you're using Eric Meyer's reset.css, this
+        is already set and you can remove this rule */
+    vertical-align: baseline;
+    /* vertical-align: top; */
+    top: -1.0em;
+    padding-right: 1%;
+}
+
+#footer_icons{
+   
+    padding-left: 45%;
+    padding-right: 0.7%;
+    display: flex;
+    justify-content:flex-end;
+    margin-right: 0%;
+}
+
+#footer_container{
+    width: 100%;
+    display: flex;
+    align-items: center !important;
+}
+
+#footer_icons2{
+    padding-left: 6%;
+    padding-right: 0%;
+}
+
+
+#footer_content{
+    font-style: Texta;
+    /* border: 2px solid green; */
+    align-self: start;
+    display: flex;
+    align-content: center;
+}
+
+.footer {
+    /* border: 2px solid white; */
+    height: 60px;
+    /* background: rgba(51, 51, 51, 0.4); */
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    /* opacity: 0.8; */
+}
+
+.contactus {
+    /* border: 2px solid white; */
+    /* height: 60px; */
+    /* background: rgba(51, 51, 51, 0.4); */
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    /* opacity: 0.8; */
+}

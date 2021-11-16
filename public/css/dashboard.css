@@ -1,0 +1,605 @@
+@font-face {
+    font-family: 'Texta';
+    src: url('Texta-Regular.eot');
+    src: local('Texta'), local('Texta-Regular'),
+        url('Texta-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Texta-Regular.woff2') format('woff2'),
+        url('Texta-Regular.woff') format('woff'),
+        url('Texta-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    font-family: Texta;
+    color: white;
+}
+/* ------------------------- background css ------------------------- */
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@-webkit-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@-moz-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@-ms-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+@-webkit-keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+@-moz-keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+@-ms-keyframes move-clouds-back {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+
+.stars,
+.twinkling,
+.clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: fixed;
+}
+
+.stars {
+  background: #000
+    url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top
+    center;
+  z-index: -10;
+}
+
+.twinkling {
+  background: transparent
+    url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat
+    top center;
+  z-index: -5;
+
+  -moz-animation: move-twink-back 200s linear infinite;
+  -ms-animation: move-twink-back 200s linear infinite;
+  -o-animation: move-twink-back 200s linear infinite;
+  -webkit-animation: move-twink-back 200s linear infinite;
+  animation: move-twink-back 200s linear infinite;
+}
+
+.clouds {
+  background: transparent
+    url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top
+    center;
+  z-index: -3;
+
+  -moz-animation: move-clouds-back 200s linear infinite;
+  -ms-animation: move-clouds-back 200s linear infinite;
+  -o-animation: move-clouds-back 200s linear infinite;
+  -webkit-animation: move-clouds-back 200s linear infinite;
+  animation: move-clouds-back 200s linear infinite;
+}
+/* ------------------------- end ------------------------- */
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    background-image: url("static files/bkgrd 1.png"),url("static files/bkgrd 2.png"),url("static files/bkgrd 3.png");
+    background-size: cover ;
+    background-position: center;
+    margin-top: 40px;
+}
+.container{
+    width: 80vw;
+    margin: auto;
+    padding: 0 0;
+    max-width: 100% !important;
+}
+.heading h1{
+    color:#00B0E0; 
+    font-size: 72px;
+    font-weight: 800;
+}
+.heading p{
+    font-size: 24px;
+    color: #FFFFFF;
+}
+.profile{
+    display: flex;
+}
+.profile-img{
+    /* border: 2px solid red; */
+    margin-right: 65px;
+}
+.profile-img img{
+    width: 513px;
+    height: 513px;
+    object-fit: cover;
+    object-position: center;
+}
+.profile-text{
+    flex-grow: 1;
+    /* border: 2px solid greenyellow; */
+}
+.profile-content p:first-of-type{
+    color:#00B0E0; 
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.profile-content h5{
+    color: #F4FDFF;
+    font-size: 25px;
+    font-weight: 400;
+    padding: 10px 0;
+}
+.profile-text button{
+    width: 100%;
+    height: 33px;
+    font-size: 18px;
+    text-align: center;
+    margin: 10px 0;
+}
+.profile-text button:first-of-type{
+    background-color: #00B0E0;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-top: 20px;
+    border: none;
+}
+.profile-text button:nth-of-type(2){
+    background-color: transparent;
+    color: #FFFFFF;
+    font-weight: 700;
+    border: 2px solid #FFFFFF;
+}
+
+
+
+/* ######################### events ################################# */
+.events{
+    margin: 150px 0 20px 0;
+    display: flex;
+    /* border: 2px solid blue; */
+}
+.events-heading{
+    /* border: 2px solid red; */
+    display: flex;
+    font-size: 36px;
+    font-weight: 700;
+}
+.events-heading:hover{
+    cursor: grab;
+}
+#added-events{
+    display: none;
+}
+.events-heading h1{
+    
+}
+.events-heading p{
+    padding-left: 20px;
+    color: gray;
+}
+
+.events-heading h1:hover, .events-heading p:hover{
+    color: #00B0E0;
+}
+.events-btn{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row-reverse;
+    /* border: 5px solid chartreuse; */
+    height: inherit;
+}
+.events-btn button{
+    padding: 0px 10px;
+    font-size: 16px;
+    border: 1px solid #FFFFFF;
+    margin-bottom: 20px;
+}
+.events-btn button:nth-of-type(2){
+    font-weight: 400;
+    color: #F4FDFF;
+    background-color: transparent;
+}
+.events-btn button:first-of-type{
+    margin-left: 15px;
+    font-weight: 700;
+    background-color: #FFFFFF;
+    color: black;
+}
+
+
+
+
+.single-event{
+    border: 2px solid #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    color: #FFFFFF;
+    padding: 20px;
+    margin: 45px 0;
+}
+.single-event p{
+    padding: 0;
+    margin: 0;
+}
+.single-event p:first-of-type{
+    font-size: 24px;
+    font-style: 700;
+    color: orange;
+    margin-bottom: 10px;
+}
+.single-event p:nth-of-type(2){
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+}
+.single-event button{
+    border: 2px solid #FFFFFF;
+    background-color: transparent;
+    width: 120px;
+    margin: 15px 0;
+    padding: 0px;
+}
+.single-event:last-child{
+    margin-bottom: 400px;
+}
+
+
+/* ############################################ footer css ########################################################## */
+.contactus {
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+    margin-top: 50px;
+    justify-content: space-between;
+    font-size: 18px;
+    /* border: 2px dashed blue; */
+}
+.contactus-left{
+    /* border: 2px solid red; */
+}
+.contactus-left span:first-of-type{
+    font-size: 36px;
+    font-weight: 700;
+}
+.contactus-left span:nth-of-type(2){
+    font-weight: 700;
+    display: inline-block;
+    padding-bottom: 20px;
+}
+.contactus-left span{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.contactus-right{
+    text-align: right; 
+    display: flex; 
+    flex-direction:column; 
+    align-content: flex-end;
+    /* border: 2px solid yellowgreen; */
+    padding: 10px 0;
+}
+
+.contactus-right span:first-of-type{
+    font-size: 24px;
+    font-weight: 700;
+    display: inline-block;
+    padding-bottom: 20px;
+}
+.contactus-right span:nth-of-type(2){
+    font-size: 18px;
+    font-weight: 700;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.contactus-right form input[type=email]{
+    background-color: transparent;
+    border: 2px solid white;
+    font-weight: 700; 
+    padding: 0 10%; 
+    margin-right: 2%;
+}
+.contactus-right form input[type=submit]{
+    color: black; 
+    background-color: white; 
+    border: 0px; 
+    padding: 3px 10px;
+}
+
+
+
+
+footer {
+    backdrop-filter: blur(6px);
+    box-sizing: border-box;
+    padding: 20px 0;
+}
+footer{
+    font-size: 18px;
+    font-weight: 700;
+}
+footer .mobile-footer-icons{
+    display: none;;
+}
+
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-icons{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.footer-icons a{
+    margin-left: 10px;
+}
+.footer-icons a img{
+    width: 32px;
+    height: 32px;
+}
+
+/* ########################################### mobile view ################################################### */
+@media (min-width: 100px) and (max-width: 600px) {
+    body {
+        margin-top: 0;
+    }
+    .container{
+        width: 90vw;
+        margin: auto;
+        max-width: 100% !important;
+    }
+
+    .profile-text{
+        padding: 10px;
+        width: 100%;
+        /* border: 2px solid greenyellow; */
+    }
+
+    .profile{
+        /* flex-direction: column; */
+        display: block;
+        width: 100% !important;
+        /* border: 2px solid red; */
+    }
+    .profile-img{
+        /* border: 2px solid red; */
+        margin-right: 0px;
+        /* width: 100%; */
+    }
+    .profile-img img{
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
+        display: block;
+        margin: auto;
+    }
+    /* ######################### events ################################# */
+    .events{
+        margin: 100px 0 20px 0;
+        display: block;
+        /* border: 2px solid blue; */
+    }
+    .events-heading{
+        /* border: 2px solid red; */
+        display: flex;
+        font-size: 25px;
+        justify-content: space-between;
+        font-weight: 700;
+    }
+    .events-heading:hover{
+        cursor: grab;
+    }
+    #added-events{
+        display: none;
+    }
+    .events-heading h1{
+        font-size: 25px;
+    }
+    .events-heading p{
+        padding-left: 0px;
+        color: gray;
+        font-size: 25px;
+    }
+
+    .events-heading h1:hover, .events-heading p:hover{
+        color: #00B0E0;
+    }
+    .events-btn{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: row-reverse;
+        /* border: 5px solid chartreuse; */
+        height: inherit;
+    }
+
+
+
+    .single-event{
+        border: 2px solid #FFFFFF;
+        display: block;
+        justify-content: space-between;
+        color: #FFFFFF;
+        padding: 10px 10px 20px 10px;
+        margin: 25px 0;
+        position: relative;
+    }
+    .single-event p{
+        padding: 0;
+        margin: 0;
+    }
+    .single-event p:first-of-type{
+        font-size: 18px;
+        font-style: 700;
+        color: orange;
+        margin-bottom: 10px;
+    }
+    .single-event p:nth-of-type(2){
+        color: #FFFFFF;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .single-event button{
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        border: 2px solid #FFFFFF;
+        background-color: transparent;
+        width: 120px;
+        margin: 10px 0 5px 0;
+        padding: 0px;
+    }
+    .single-event:last-child{
+        margin-bottom: 100px;
+    }
+    .single-event span{
+        display: block;
+    }
+
+
+
+
+
+        /* footer  */
+    .contactus {
+        backdrop-filter: blur(4px);
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+        margin-top: 30px;
+        justify-content: space-between;
+        /* border: 2px dashed blue; */
+        font-size: 12px;
+    }
+    .contactus-left{
+        /* border: 2px solid red; */
+    }
+    .contactus-left span:first-of-type{
+        font-size: 12px;
+        font-weight: 700;
+    }
+    .contactus-left span:nth-of-type(2){
+        font-weight: 700;
+        display: inline-block;
+        padding-bottom: 15px;
+    }
+    .contactus-left span{
+        font-size: 10px;
+        font-weight: 400;
+    }
+    
+    .contactus-right{
+        text-align: right; 
+        display: flex; 
+        flex-direction:column; 
+        align-content: flex-end;
+        /* border: 2px solid yellowgreen; */
+        padding: 0;
+    }
+    
+    .contactus-right span:first-of-type{
+        font-size: 12px;
+        font-weight: 700;
+        display: inline-block;
+        padding-bottom: 0px;
+    }
+    .contactus-right span:nth-of-type(2){
+        font-size: 9px;
+        font-weight: 400;
+        display: inline-block;
+        padding-bottom: 10px;
+    }
+    .contactus-right form input[type=email]{
+        background-color: transparent;
+        border: 2px solid white;
+        font-weight: 700; 
+        padding: 0 10%px; 
+        margin-right: 0;
+    }
+    .contactus-right form input[type=submit]{
+        color: black; 
+        background-color: white; 
+        border: 0px; 
+        padding: 1px 3px;
+        margin-top: 5px;
+    }
+    
+
+
+    footer{
+        font-size: 8px;
+        font-weight: 700;
+    }
+    footer .footer-text{
+        flex: 2;
+    }
+    footer .footer-icons{
+        flex: 2;
+    }
+    footer .mobile-footer-icons{
+        /* display: inline-block; */
+    }
+    .footer-icons a img{
+        width: 16px;
+        height: 16px;
+    }
+}

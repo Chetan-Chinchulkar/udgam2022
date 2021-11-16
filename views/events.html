@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UDGAM | Events</title>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="./events.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./font/stylesheet.css">
+
+    <!-- <link rel="icon" href=""> -->
+    <link rel="icon" href="./static files/UDGAM logo (title).png" type="image/icon type">
+    <!-- link for font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./carousel/style.css">
+</head>
+
+<body>
+
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <div class="clouds"></div>
+    <div class="main">
+        <br>
+        <br>
+        <br>
+
+        <div class="row  justify-content-between" style="display: flex; align-items: center;">
+            <div class="col-12 col-sm-12 col-md-3 " style="display: flex;justify-content: start;">
+                <button class="but-arrow-left" onclick="sliderPrev('events')"><i class="fas fa-arrow-left arrow arrow-left "> </i></button>
+            </div>
+            <div class="col-12 col-sm-12 col-md-2 ev-trans" style="display: flex;justify-content: center;">
+                <span id="prev" class="event-link"></span>
+
+            </div>
+            <div class="col-12 col-sm-12 col-md-2 ev-trans" style="display: flex;justify-content: center;">
+                <span id="current" class="event-link"></span>
+
+            </div>
+            <div class="col-12 col-sm-12 col-md-2 ev-trans" style="display: flex;justify-content: center;">
+                <span id="next" class="event-link"></span>
+
+            </div>
+            <div class="col-12 col-sm-12 col-md-3" style="display: flex;justify-content: end;">
+                <button class="but-arrow-right" onclick="sliderNext('events')"><i class="fas fa-arrow-right  arrow arrow-right "></i></button>
+
+            </div>
+
+
+        </div>
+
+        <div class="carousel">
+
+
+
+            <div class="page" id="pg-content-reg">
+                <div class="page-header title" id="page-header" >
+
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="pg-content-reg">
+
+                    <div class="page-body" id="page-body">
+                        <div class="page_content row justify-content-between ">
+                            <p class="page_paragraph col-12 col-sm-12 col-md-6 order-2 order-lg-1 order-md-1 extra" id='paragraph'>
+
+                            </p>
+                            <div class="col-12 col-sm-12 col-md-4 align-self-center page__img order-1 order-lg-2 order-md-2" id="page-img"
+                                style="border: solid 1px #C4C4C4; width: 30vw !important; height: 50vh !important;">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <section class="section-padding"
+                        style="padding: 10px 10px; margin-top: 125px; margin-bottom: 250px;">
+                        <div class="row justify-content-between"
+                            style="padding: 20px 10px 20px 10px; border: solid 1px #C4C4C4;">
+                            <div class="col-12 col-sm-12 col-md-3 align-self-start reg-bor">
+                                <div class="head">
+                                    REG. DEADLINE
+                                </div>
+                                <div class="reg-dead" id="reg-dead">
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-2 align-self-start reg-bor">
+                                <div class="head">
+                                    TEAM SIZE
+                                </div>
+                                <div class="team" id="team">
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-3 align-self-start reg-bor">
+                                <div class="head">
+                                    DATE
+                                </div>
+                                <div class="ev-date" id="ev-date">
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-3 align-self-center">
+                                <div class="row justify-content-center  reg-butt">
+                                    <a href="#ev-register">
+                                        <button onclick="register()" type="button" class="btn btn-primary"
+                                            style="background-color: #00B0E0;width: 200px;font-style: normal;font-size: 30px;line-height: 40px;color: #FFFFFF;flex: none;order: 0;flex-grow: 0;margin: 0px 9.06433px;">
+                                            REGISTER
+
+                                        </button>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="ev-register" id="ev-register">
+                <section class="section-padding header" >
+                    <div class="title" style="display: flex;justify-content: start;">
+                        <div>
+                            Register for
+                        </div>
+                        <div id="reg-title" style="padding-left: 10px;">
+
+                        </div>
+
+                    </div>
+
+                    <div class="content" style="padding-top: 60px;">
+                        <div class="row  justify-content-between">
+                            <div class="col-12 col-sm-12 col-md-7 order-2 order-lg-1 order-md-1">
+                                <form action="">
+                                    <div class="form-row">
+                                        <div class="form-group extra">
+                                            <label for="" style="padding-left: 5px;">
+                                                YOU HEARD US FROM
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group btn-group btn-group-toggle col" data-toggle="buttons">
+
+                                            <label class="btn btn-secondary active" style="padding-right: 10px;">
+                                                <input type="radio" name="options" id="option1" onclick="showmore()">
+                                                CAMPUS AMBASSADOR
+                                            </label>
+
+
+                                            <label class="btn btn-secondary" style="padding-left: 10px;">
+                                                <input type="radio" name="options" id="option2" onclick="showless()">
+                                                SOCIAL MEDIA
+                                            </label>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="form-group  CA-option row" id="CAReferral">
+                                        <div class="col-12 col-sm-12 col-md-12 ">
+
+                                            <label for="inputAddress">CA REFERRAL ID</label>
+                                            <input type="text" class="form-control" id="inputAddress" style="background: transparent;border: 2px solid white;" placeholder="6969696">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="" style="padding-left: 5px;">
+                                                Do you want to confirm your Registration?
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class=" row justify-content-between">
+                                        <div class="form-group col-12 col-sm-12 col-md-6">
+                                            
+                                            <div id="reg-link">
+
+                                            </div>
+
+
+                                        </div>
+                                        <div class="form-group col-12 col-sm-12 col-md-6">
+                                            <a href="#">
+                                                <button onclick="reg_back()" type="button"
+                                                    class="btn btn-light back-btn"
+                                                    style="color: white;width: 100%;">GO BACK</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-4 align-self-center page__img order-1 order-lg-2 order-md-2" id="reg-img"
+                                style="border: solid 1px #C4C4C4; width: 30vw !important; height: 50vh !important;">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+
+
+
+
+        </div>
+
+        <!-- footer -->
+        <section>
+            <hr style="margin: 0;background-color: white;">
+
+            <div class="contactus" style="margin-bottom: 80px;margin-top: 50px;">
+                <div id="footer_main" class="container row">
+                    <div id="" style="display: flex; width: 100%; padding-bottom:5%; padding-top:3%">
+                        <div class="" style="font-style: Texta;">
+                            <span style="font-size:200%">UDGAM 2022 </span><br>
+                            <span>COSMOS OF ENDEAVOURS </span><br><br>
+                            <span>FAQ • Contact us</span><br>
+                            <span>udgam@iitg.ac.in </span><br>
+                        </div>
+                        <div style="margin-right: 36vw;"></div>
+                        <div class=""
+                            style=" text-align: right; display: flex; flex-direction:column; align-content: flex-end;">
+                            <span>Don’t miss the magic</span>
+                            <span>Sign up to receive event updates and notifications.</span><br>
+                            <form action="/action_page.php">
+                                <input type="id" id="emailid" name="fname"
+                                    style="background-color: transparent; border: 2px solid white; padding-right: 10%; margin-right: 2%;">
+                                <input type="submit" value="Submit"
+                                    style="color: black; background-color: white; border: 0px; margin-top:1vw; padding-top:0.8%; padding-bottom: 0.8%; padding-left: 5%; padding-right: 5%;">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr style="margin: 0; background-color: white;">
+            <div class="footer">
+                <div id="footer_main" class="container row">
+                    <div id="footer_container">
+                        <div id="footer_content">
+                            Copyright © 2022 UDGAM Creatives, All rights reserved.
+                        </div>
+                        <div id="footer_icons">
+                            <a href="https://www.facebook.com/ecell.iitg/" id="footer_icons2" target="_blank">
+                                <img class="facebook button" src="static files\facebook.svg"
+                                    style="width: 32px; height:32px;">
+                            </a>
+                            <a href="https://twitter.com/ecelliitg" id="footer_icons2" target="_blank">
+                                <img class="twitter button" src="static files\twitter.svg"
+                                    style="width: 32px; height:32px;">
+                            </a>
+                            <a href="https://www.linkedin.com/company/ecell-iitg/" id="footer_icons2" target="_blank">
+                                <img class="linkedin button" src="static files\linkedin.svg"
+                                    style="width: 32px; height:32px;">
+                            </a>
+                            <a href="https://www.instagram.com/ecell_iitg/" id="footer_icons2" target="_blank">
+                                <img class="discord button" src="static files\instagram.svg"
+                                    style="width: 32px; height:32px;">
+                            </a>
+                            <a href="https://www.youtube.com/user/iitgedc" id="footer_icons2" target="_blank">
+                                <img class="discord button" src="static files\youtube.svg"
+                                    style="width: 32px; height:32px;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <script src="./carousel/main.js">
+    </script>
+
+    <script>
+        window.onload = function () {
+            loadApp();
+        };
+    </script>
+
+
+    <script>
+        $(window).scroll(function () {
+            $('nav').toggleClass('scrolled', $(this).scrollTop() > 30);
+        });
+    </script>
+    <script>
+        function showmore() {
+            document.getElementById("CAReferral").style.display = 'block';
+
+        }
+        function showless() {
+            document.getElementById("CAReferral").style.display = 'none';
+        }
+    </script>
+
+    <script>
+
+        function register() {
+            let show = document.getElementById('ev-register');
+            console.log(show);
+            show.style.display = 'block';
+            let hide = document.getElementById('pg-content-reg');
+            hide.style.display = 'none';
+        }
+        function reg_back() {
+            let show = document.getElementById('pg-content-reg');
+            console.log(show);
+            show.style.display = 'block';
+            let hide = document.getElementById('ev-register');
+            hide.style.display = 'none';
+        }
+    </script>
+
+</body>
+
+</html>

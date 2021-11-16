@@ -1,0 +1,103 @@
+
+.carousel{
+    width: 80vw;
+}
+
+.page{
+    width: 100%;
+}
+
+.page-header{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+
+.page-name{
+    float: left;
+    text-align: left;
+}
+
+.page-date{
+    float: right;
+    text-align: right;
+}
+
+.page-body{
+    width: 100%;
+}
+
+.page_paragraph{
+    width: 100%;
+    
+}
+
+#page-image{
+    width: 50%;
+    height: auto;
+}
+
+
+@media screen and (min-width: 768px) 
+{
+    .testimonial-page {
+        width: 550px;
+    }
+}
+
+
+.reg-link a{
+    font-style: normal;
+    font-size: 30px;
+    line-height: 40px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 9.06433px;
+}
+
+.page-name.disabled 
+{
+    left: 10em;  
+    display: none !important;
+    /* opacity: 0; */
+}
+.page-image.disabled 
+{
+    display: none !important;
+}
+
+.page-date.disabled 
+{
+    left: 10em;  
+    display: none !important;
+}
+
+#prev{
+    font-family: Texta;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 34px;
+    color: #FFFFFF;
+    opacity: 0.3;
+}
+
+#current{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 45px;
+    color: white;
+}
+
+#next{
+    font-family: Texta;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 34px;
+    color: #FFFFFF;
+    opacity: 0.3;
+}

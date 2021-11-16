@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register NOW</title>
+
+    <link rel="stylesheet" href="./Registeration.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <div class="clouds"></div>
+    <br> <br>
+    <section class="main">
+        <div class="mainheading">
+            <div class="heading">
+                REGISTER NOW
+            </div>
+            <div class="headingsub">
+                What are you waiting for? Go ahead and embark upon an exhilarating ride of knowledge, fun and value addition. 
+            </div>
+        </div>
+        <div class="container content">
+            <div class="row">
+                <div class="col-sm-5 ProfilePic">
+                    <img id="ProfilePic" src = "Static Files\img_avatar.png">
+                </div>
+                <div class="col-sm-7 RegistrationDetails" style="margin-top: 0%;">
+                    <label for="fname" style="margin-top: 0px">NAME</label>
+                    <input type="text" id="name" name="name" placeholder="Hi No0bMaster69 let Us know your Real name!">
+                    <label for="College">YOU ARE FROM</label>
+                    <div class = "row" style="margin-left:0%; margin-right: 0%;">
+                        <button class="col" type="button" style="width:fit-content; padding: 0px ; background-color: transparent; border: 1px solid white; margin-right:2vw;">IIT GUWAHATI</button>
+                        <button class="col" type="button" style="width:auto; background-color: transparent; border: 1px solid white;">OTHER</button>
+                    </div>
+                    <label for="emailID">EMAIL ID</label>
+                    <input type="text" id="emailID" name="emailID" placeholder="Let Us know your Mail ID so we can contact you in the speed of light">
+                    <label for="password">PASSWORD</label>
+                    <div class="">
+                        <input class="" type="password" id="password" name="password" placeholder="DUMMY TEXT" style="width:100% ">
+                        <svg id="passwordicon" onclick="passwordshow()" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye-slash">
+                            <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                            <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                        </svg>
+                    </div>
+                    <br>
+                    <button type="button" style="background-color: #00B0E0; border: 0PX;">CREATE ACCOUNT</button>
+                    <span style="width: 100%; text-align: center;">OR</span>
+                    <button type="button" style="background-color: transparent; border: 1px solid white;">LOGIN USING AN EXISTING ACCOUNT</button>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <br><br><br><br><br>
+    <section style="backdrop-filter: blur(5px);">
+        <hr color="white">
+
+        <div class="contactus container">
+            <div class="contactus-left">
+                <span>UDGAM 2022 </span><br>
+                <span>COSMOS OF ENDEAVOURS </span><br>
+                <span>FAQ • Contact us</span><br>
+                <span>udgam@iitg.ac.in </span><br>
+            </div>
+
+            <div class="contactus-right">
+                <span>Don’t miss the magic</span>
+                <span>Sign up to receive event updates and notifications.</span>
+                <!-- <div class="row"> -->
+                    <form action="/action_page.php">
+                        <input type="email" id="emailid" name="fname">
+                        <input type="submit" value="Submit">
+                    </form>
+                <!-- </div> -->
+            </div>
+        </div>
+
+        <hr style="background-color: white; margin: 0;">
+        <footer>
+            <div class="container footer-wrapper">
+                <div class="footer-text">
+                    Copyright &copy; 2022 UDGAM Creatives, All rights reserved.
+                </div>
+                <div class="footer-icons">
+                    <a href="https://www.facebook.com/ecell.iitg/" target="_blank">
+                        <img class="facebook button" src="static files\facebook.svg">
+                    </a>
+                    <a href="https://twitter.com/ecelliitg" target="_blank">
+                        <img class="twitter button" src="static files\twitter.svg">
+                    </a>
+                    <a href="https://www.linkedin.com/company/ecell-iitg/" target="_blank">
+                        <img class="linkedin button" src="static files\linkedin.svg">
+                    </a>
+                    <a href="https://www.instagram.com/ecell_iitg/" target="_blank">
+                        <img class="discord button" src="static files\instagram.svg">
+                    </a>
+                    <a href="https://www.youtube.com/user/iitgedc" target="_blank">
+                        <img class="discord button" src="static files\youtube.svg">
+                    </a>
+                </div>
+                <div class="mobile-footer-icons">
+                    Socials
+                </div>
+            </div>
+        </footer>
+    </section>
+<script>
+    function passwordshow() {
+            var x = document.getElementById("password");
+            if (x.type === "password"){
+                x.type = "text";
+                var y = document.getElementById("passwordicon");
+                y.innerHTML =  '<path d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7.028 7.028 0 0 0-2.79.588l.77.771A5.944 5.944 0 0 1 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.134 13.134 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755-.165.165-.337.328-.517.486l.708.709z"/><path d="M11.297 9.176a3.5 3.5 0 0 0-4.474-4.474l.823.823a2.5 2.5 0 0 1 2.829 2.829l.822.822zm-2.943 1.299.822.822a3.5 3.5 0 0 1-4.474-4.474l.823.823a2.5 2.5 0 0 0 2.829 2.829z"/><path d="M3.35 5.47c-.18.16-.353.322-.518.487A13.134 13.134 0 0 0 1.172 8l.195.288c.335.48.83 1.12 1.465 1.755C4.121 11.332 5.881 12.5 8 12.5c.716 0 1.39-.133 2.02-.36l.77.772A7.029 7.029 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.721 2.641-3.238l.708.709zm10.296 8.884-12-12 .708-.708 12 12-.708.708z"/>'
+            } 
+            else{
+                x.type = "password";
+                var y = document.getElementById("passwordicon");
+                y.innerHTML = '<path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/><path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>'
+            }
+
+        }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
