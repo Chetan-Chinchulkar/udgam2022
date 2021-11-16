@@ -1,0 +1,14 @@
+<% if(!userinfo){ %>
+    <p>Hello guest</p>
+    <a class="navbar-brand btn btn-danger btn-small" style="color: Black;" href="/login">Login to buy</a>
+<%}else{%>
+    <p>Hello <%= userinfo.displayName%></p>
+    <a class="navbar-brand btn btn-danger btn-small" style="color: Black;" href="/workshop_pass_buy_1">Buy Pass for W1</a><br>
+    <a class="navbar-brand btn btn-danger btn-small" style="color: Black;" href="/workshop_pass_buy_2">Buy Pass for W2</a><br>
+    <a class="navbar-brand btn btn-danger btn-small" style="color: Black;" href="/workshop_pass_buy_3">Buy Pass for W3</a><br>
+    <a class="navbar-brand btn btn-danger btn-small" style="color: Black;" href="/workshop_pass_buy_4">Buy Pass for W4</a><br>
+    <a class="navbar-brand btn btn-danger btn-small" style="color: Black;" href="/workshop_pass_buy_5">Buy Pass for W5</a>
+ <%}%>   
+
+ <hr>
+ <h3>Info about workshop....</h3>

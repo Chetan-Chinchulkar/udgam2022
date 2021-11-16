@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Done</title>
+   
+</head>
+
+<body>
+
+    <!-- As a link -->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+         
+           
+          
+        </div>
+    </nav>
+    <% if(!userinfo){  %>
+        <a class="navbar-brand btn btn-danger btn-small" style="color: Black;" href="/login">Login</a>
+        <a class="navbar-brand btn btn-danger btn-small" style="color: Black;" href="/register">Register</a>
+    <% }else{ %> 
+    <h1> <%=userinfo.displayName %></h1>
+    <h2> <%=userinfo.email %></h2>
+    <a class="navbar-brand btn btn-danger btn-small" style="color: Black;" href="/auth/logout">Logout</a><br>
+    <a class="navbar-brand btn btn-danger btn-small" style="color: Black;" href="/purchase">My Purchases</a>
+     <% } %> 
+<br><br><hr>
+     <h2>Events : </h2>
+     <a class="navbar-brand btn btn-danger btn-small" style="color: Black;" href="/islogispass">Buy Udgam Pass</a><br>
+     <a class="navbar-brand btn btn-danger btn-small" style="color: Black;" href="/workshop_pass_info">Workshop pass</a><br>
+     <a class="navbar-brand btn btn-danger btn-small" style="color: Black;" href="/disrupt">Disrupt Registration</a><br>
+     <a class="navbar-brand btn btn-danger btn-small" style="color: Black;" href="/pmx">PMx Registration</a><br>
+     <a class="navbar-brand btn btn-danger btn-small" style="color: Black;" href="/codingcollab">Coding Collab Registration</a><br>
+     <a class="navbar-brand btn btn-danger btn-small" style="color: Black;" href="/strategystorm">Strategy Storm Registration</a><br>
+     <br>
+     <!-- <a class="navbar-brand btn btn-danger btn-small" style="color: Black;" href="/landingpage">Login Required Link</a> -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="ejs.min.js"></script>
+</body>
+
+</html>

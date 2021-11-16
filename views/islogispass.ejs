@@ -1,0 +1,10 @@
+<% if(!userinfo){ %>
+    <p>Hello guest</p>
+    <a class="navbar-brand btn btn-danger btn-small" style="color: Black;" href="/login">Login to buy</a>
+<%}else{%>
+    <p>Hello <%= userinfo.displayName%></p>
+    <a class="navbar-brand btn btn-danger btn-small" style="color: Black;" href="/buy_upass">Buy Now</a>
+ <%}%>   
+
+ <hr>
+ <h3>Info about event....</h3>

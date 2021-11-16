@@ -1,0 +1,75 @@
+<h1>Register</h1>
+Head , <%= userinfo.displayName%><br>
+<form action="/strategystorm" method="POST">
+    <div>
+        <label for="teamName">Team Name</label>
+        <input
+          type="name"
+          name="teamName"
+          placeholder="Enter Name"
+          value="<%= typeof teamName != 'undefined' ? teamName : '' %>"
+        />
+      
+    </div>
+    <div>
+<div>
+    <label for="mem1name">member1Name</label>
+    <input
+      type="name"
+      name="mem1name"
+      placeholder="Enter Name"
+      value="<%= typeof mem1name != 'undefined' ? mem1name : '' %>"
+    />
+  
+</div>
+<div>
+    <label for="mem1email">member1Email</label>
+    <input
+      type="email"
+      name="mem1email"
+      placeholder="Enter Email"
+      value="<%= typeof mem1email != 'undefined' ? mem1email : '' %>"
+    />
+  </div>
+  <div>
+    <label for="mem1clg">member1clg</label>
+    <input
+      type="name"
+      name="mem1clg"
+      placeholder="Enter college"
+      value="<%= typeof mem1clg != 'undefined' ? mem1clg : '' %>"
+    />
+  
+</div>
+  <div >
+    <label for="mem2name">member2name</label>
+    <input
+      type="name"
+      name="mem2name"
+      placeholder="Enter Name"
+      value="<%= typeof mem2name != 'undefined' ? mem2name : '' %>"
+    />
+  </div>
+  <div>
+    <label for="mem2email">member2Email</label>
+    <input
+      type="email"
+      name="mem2email"
+      placeholder="Enter Email"
+      value="<%= typeof mem2email != 'undefined' ? mem2email : '' %>"
+    />
+  </div>
+  <div>
+    <label for="mem2clg">member2clg</label>
+    <input
+      type="name"
+      name="mem2clg"
+      placeholder="Enter college"
+      value="<%= typeof mem2clg != 'undefined' ? mem2clg : '' %>"
+    />
+  
+</div>
+  <button type="submit" class="btn btn-primary btn-block">
+    Register
+  </button>
+</form>
