@@ -427,7 +427,7 @@ router.post('/codingcollab',(req,res)=>{
 
 ////////////////PMX///////////////////
 
-router.get("/pmx",ensureAuth, async(req,res)=>{
+router.get("/pmx", async(req,res)=>{
     res.render('pmxform',{userinfo:req.user});
 }) 
 
