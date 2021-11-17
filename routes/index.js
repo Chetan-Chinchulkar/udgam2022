@@ -27,7 +27,7 @@ router.get("/login", ensureGuest, async(req,res)=>{
 router.get('/register', ensureGuest, (req, res) => res.render('register'));
 
 router.post('/register',(req,res)=>{
-  const {name,email, password, password2} = req.body;
+  const {name,email, password, password2,college} = req.body;
   let uidarr=email.split("@");
   let uid=uidarr[0];
   const id = genuid({
@@ -88,7 +88,8 @@ router.post('/register',(req,res)=>{
           dframe:0,
           coding_collab:0,
           strategy_storm:0,
-          gaming:0
+          gaming:0,
+          college:college,
           });
   
           //hash password
@@ -572,8 +573,8 @@ router.post('/charge', (req, res) => {
 })
 
 
-router.get('/purchase', ensureAuth ,(req,res) => {
-	res.render('purchase' , {userinfo:req.user});
+router.get('/dashboard', ensureAuth ,(req,res) => {
+	res.render('dashboard' , {userinfo:req.user});
 })
 
 

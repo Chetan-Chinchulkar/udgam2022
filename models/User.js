@@ -62,6 +62,9 @@ type:String,
   gaming:{
     type:Number,
   },
+  college:{
+    type:String,
+  },
 
 })
 

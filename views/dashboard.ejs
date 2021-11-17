@@ -34,27 +34,34 @@
         </div>
         <div class="profile">
             <div class="profile-img">
-                <img src="https://media-exp1.licdn.com/dms/image/D5603AQE3kR2o4Snhpg/profile-displayphoto-shrink_800_800/0/1630266773475?e=1641427200&v=beta&t=kyTd95R0ZLaW0i6I_Hy8MTw3aRKp4N3DRV915gHJPDs" alt="profile img">
+                <img src="./static files/speaker.png" alt="profile img">
             </div>
             <div class="profile-text">
                 <div class="profile-content">
                     <p>NAME</p>
-                    <h5>VEDAPRAKASH RAJAN</h5>
+                    <h5><%= userinfo.displayName%></h5>
                 </div>
-                <div class="profile-content">
-                    <p>UDGAM PASS ID</p>
-                    <h5>987456321 <i class="fal fa-clipboard"></i></h5>
-                </div>
+                
                 <div class="profile-content">
                     <p>USER ID</p>
-                    <h5>258741</h5>
+                    <h5><%= userinfo.uid %></h5>
                 </div>
+
+                <div class="profile-content">
+                    <p>UDGAM PASS ID</p>
+                    <% if(userinfo.upass == 1){ %>
+                    <h5><%= userinfo.upassid%> <i class="fal fa-clipboard"></i></h5>
+                    <%}else{ %>
+                        <h5>Pass not purchased</h5>
+                    <%}%>
+                </div>
+
                 <div class="profile-content">
                     <p>EMAIL ID</p>
-                    <h5>ved.iitg.ac.in</h5>
+                    <h5><%= userinfo.email%></h5>
                 </div>
                 <button type="button" class="edit-btn">EDIT DETAILS</button>
-                <button type="button" class="logout-btn">LOGOUT</button>
+                <button onclick="window.location.href='auth/logout'" type="button" class="logout-btn">LOGOUT</button>
             </div>
         </div>
         <div class="events">

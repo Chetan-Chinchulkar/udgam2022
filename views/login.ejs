@@ -32,9 +32,10 @@
                 <div class="col-md-5 ProfilePic">
                     <img id="ProfilePic" src = "static files\img_avatar.png">
                 </div>
+                <form action="/auth/login_m" method="POST">
                 <div class="col-md-7 RegistrationDetails" style="margin-top: 0%;">
                     <label for="emailID">EMAIL ID / PHONE</label>
-                    <input type="text" id="emailID" name="emailID" placeholder="Let Us know your Mail ID so we can contact you in the speed of light" >
+                    <input type="email" id="email" name="email" placeholder="Let Us know your Mail ID so we can contact you in the speed of light" >
                     <label for="password">PASSWORD</label>
                     <div class="">
                         <input class="" type="password" id="password" name="password" placeholder="DUMMY TEXT" style="width:100% ">
@@ -44,9 +45,12 @@
                         </svg>
                     </div>
                     <br>
-                    <button type="button" style="background-color: #00B0E0; border: 0PX;">LOGIN</button>
+                    <input type="submit" style="background-color: #00B0E0; border: 0PX;" value = "Login"/>
+</form>
                     <span style="width: 100%; text-align: center;">OR</span>
-                    <button type="button" style="background-color: transparent; border: 1px solid white;">CREATE AN ACCOUNT</button>
+                    <button type="button" onclick="window.location.href='/auth/google'" style="background-color: transparent; border: 1px solid white;">Login with Google</button>
+            <br>
+                    <button type="button" onclick="window.location.href='/register'" style="background-color: transparent; border: 1px solid white;">CREATE AN ACCOUNT</button>
                 </div>
             </div>
         </div>

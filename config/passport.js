@@ -66,7 +66,8 @@ module.exports = function (passport) {
           dframe:0,
           coding_collab:0,
           strategy_storm:0,
-          gaming:0
+          gaming:0,
+          college:""
         }
 
         try {

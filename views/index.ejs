@@ -56,7 +56,12 @@
                     <a href="./Ourteams.html"> TEAM </a>
                     <a href="./sponsors.html"> SPONSORS </a>
                     <a href="./contact us.html"> CONTACT US </a>
-                    <a href="./Registeration.html"> SIGNUP </a>
+                    <% if(!userinfo){%>
+                    <a href="/login"> LOGIN </a>
+                    <%}else{%>
+                        <a href="/dashboard"> DASHBOARD </a>
+                        <a href="/auth/logout"> LOGOUT </a> 
+                     <%}%>   
                 </div>
 
             </div>
@@ -104,12 +109,16 @@
 
                     </div>
                     <div class="col col-lg-4 text-center" style="margin: 7vh 0; font-size: larger; ">
+                        <%if(!userinfo){%>
                         <button style="color: #333333; padding:1vh 2vw; font-weight: bold;">
-                            <a href="#" style="color: black;">
+                            <a href="/register" style="color: black;">
 
                                 REGISTER
                             </a>
                         </button>
+                    <%}else{ %>
+                         <h1> Welcome , <%= userinfo.displayName%>  </h1>         
+                        <%}%>
                     </div>
                     <div class="col col-lg-4 d-none d-lg-inline">
 

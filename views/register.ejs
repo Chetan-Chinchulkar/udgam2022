@@ -29,16 +29,16 @@
                 <div class="col-sm-5 ProfilePic">
                     <img id="ProfilePic" src = "../Static Files\img_avatar.png">
                 </div>
+                <form action="/register" method="POST">
                 <div class="col-sm-7 RegistrationDetails" style="margin-top: 0%;">
                     <label for="fname" style="margin-top: 0px">NAME</label>
                     <input type="text" id="name" name="name" placeholder="Hi No0bMaster69 let Us know your Real name!">
                     <label for="College">YOU ARE FROM</label>
                     <div class = "row" style="margin-left:0%; margin-right: 0%;">
-                        <button class="col" type="button" style="width:fit-content; padding: 0px ; background-color: transparent; border: 1px solid white; margin-right:2vw;">IIT GUWAHATI</button>
-                        <button class="col" type="button" style="width:auto; background-color: transparent; border: 1px solid white;">OTHER</button>
+                        <input type="text" id="college" name="college" placeholder="Name of your institute">  
                     </div>
                     <label for="emailID">EMAIL ID</label>
-                    <input type="text" id="emailID" name="emailID" placeholder="Let Us know your Mail ID so we can contact you in the speed of light">
+                    <input type="text" id="email" name="email" placeholder="Let Us know your Mail ID so we can contact you in the speed of light">
                     <label for="password">PASSWORD</label>
                     <div class="">
                         <input class="" type="password" id="password" name="password" placeholder="DUMMY TEXT" style="width:100% ">
@@ -47,10 +47,20 @@
                             <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
                         </svg>
                     </div>
+                
+                    <label for="password">Confirm Password</label>
+                    <div class="">
+                        <input class="" type="password" id="password2" name="password2" placeholder="DUMMY TEXT" style="width:100% ">
+                        <svg id="passwordicon" onclick="passwordshow()" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye-slash">
+                            <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                            <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                        </svg>
+                    </div>
                     <br>
-                    <button type="button" style="background-color: #00B0E0; border: 0PX;">CREATE ACCOUNT</button>
+                    <input type="submit" style="background-color: #00B0E0; border: 0PX;" value = "Create Account" />
+                </form>
                     <span style="width: 100%; text-align: center;">OR</span>
-                    <button type="button" style="background-color: transparent; border: 1px solid white;">LOGIN USING AN EXISTING ACCOUNT</button>
+                    <button type="button" onclick="window.location.href='/login'" style="background-color: transparent; border: 1px solid white;">LOGIN USING AN EXISTING ACCOUNT</button>
                 </div>
             </div>
         </div>
