@@ -428,8 +428,8 @@ router.post('/codingcollab',(req,res)=>{
 
 ////////////////PMX///////////////////
 
-router.get("/pmx", async(req,res)=>{
-    res.render('pmxform',{userinfo:req.user});
+router.get("/pmx",ensureAuth, async(req,res)=>{
+    res.render('events',{userinfo:req.user});
 }) 
 
 router.post('/pmx',(req,res)=>{
@@ -575,6 +575,10 @@ router.post('/charge', (req, res) => {
 
 router.get('/dashboard', ensureAuth ,(req,res) => {
 	res.render('dashboard' , {userinfo:req.user});
+})
+
+router.get('/purchase', ensureAuth ,(req,res) => {
+	res.render('./old/buy_upass' , {userinfo:req.user});
 })
 
 
